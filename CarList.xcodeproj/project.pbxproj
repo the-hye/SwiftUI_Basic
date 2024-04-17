@@ -13,7 +13,10 @@
 		AF9A15602BCF6D3400E77B86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9A155F2BCF6D3400E77B86 /* Preview Assets.xcassets */; };
 		AF9A15812BCF9F2E00E77B86 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A15802BCF9F2E00E77B86 /* CarDetailView.swift */; };
 		AF9A15832BCF9F4300E77B86 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A15822BCF9F4300E77B86 /* Mock.swift */; };
-		AF9A15852BCF9F5100E77B86 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A15842BCF9F5100E77B86 /* Model.swift */; };
+		AF9A15882BCFA18200E77B86 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A15872BCFA18200E77B86 /* Car.swift */; };
+		AF9A158A2BCFA18E00E77B86 /* ElectricCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A15892BCFA18E00E77B86 /* ElectricCar.swift */; };
+		AF9A158C2BCFA19900E77B86 /* OilCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A158B2BCFA19900E77B86 /* OilCar.swift */; };
+		AF9A158E2BCFA1A300E77B86 /* HybridCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A158D2BCFA1A300E77B86 /* HybridCar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +27,10 @@
 		AF9A155F2BCF6D3400E77B86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF9A15802BCF9F2E00E77B86 /* CarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
 		AF9A15822BCF9F4300E77B86 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
-		AF9A15842BCF9F5100E77B86 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AF9A15872BCFA18200E77B86 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		AF9A15892BCFA18E00E77B86 /* ElectricCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricCar.swift; sourceTree = "<group>"; };
+		AF9A158B2BCFA19900E77B86 /* OilCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilCar.swift; sourceTree = "<group>"; };
+		AF9A158D2BCFA1A300E77B86 /* HybridCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridCar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 		AF9A154C2BCF6D3000E77B86 = {
 			isa = PBXGroup;
 			children = (
+				AF9A15862BCFA13C00E77B86 /* Models */,
 				AF9A15572BCF6D3000E77B86 /* CarList */,
 				AF9A15562BCF6D3000E77B86 /* Products */,
 			);
@@ -63,7 +70,6 @@
 				AF9A155E2BCF6D3400E77B86 /* Preview Content */,
 				AF9A15802BCF9F2E00E77B86 /* CarDetailView.swift */,
 				AF9A15822BCF9F4300E77B86 /* Mock.swift */,
-				AF9A15842BCF9F5100E77B86 /* Model.swift */,
 			);
 			path = CarList;
 			sourceTree = "<group>";
@@ -74,6 +80,17 @@
 				AF9A155F2BCF6D3400E77B86 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF9A15862BCFA13C00E77B86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF9A15872BCFA18200E77B86 /* Car.swift */,
+				AF9A15892BCFA18E00E77B86 /* ElectricCar.swift */,
+				AF9A158B2BCFA19900E77B86 /* OilCar.swift */,
+				AF9A158D2BCFA1A300E77B86 /* HybridCar.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF9A15852BCF9F5100E77B86 /* Model.swift in Sources */,
+				AF9A158C2BCFA19900E77B86 /* OilCar.swift in Sources */,
+				AF9A158A2BCFA18E00E77B86 /* ElectricCar.swift in Sources */,
 				AF9A155B2BCF6D3000E77B86 /* ContentView.swift in Sources */,
+				AF9A15882BCFA18200E77B86 /* Car.swift in Sources */,
+				AF9A158E2BCFA1A300E77B86 /* HybridCar.swift in Sources */,
 				AF9A15812BCF9F2E00E77B86 /* CarDetailView.swift in Sources */,
 				AF9A15592BCF6D3000E77B86 /* CarListApp.swift in Sources */,
 				AF9A15832BCF9F4300E77B86 /* Mock.swift in Sources */,
