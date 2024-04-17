@@ -7,7 +7,21 @@
 
 import SwiftUI
 
-class Car: Identifiable {
+protocol CarDescriptionProtocol {
+    var brand: String { get }
+    var modelName: String { get }
+    var year: Int { get }
+
+    func getDetails() -> String
+}
+
+extension CarDescriptionProtocol {
+    func getDetails() -> String {
+        return "Brand: \(brand)\nModel: \(modelName)\nYear: \(year)"
+    }
+}
+
+class Car: Identifiable, CarDescriptionProtocol {
     let id = UUID()
     var brand: String
     var modelName: String
@@ -77,24 +91,27 @@ let cars: [Car] = [teslaModelX, teslaModelY, kiaK9, kiaK8, kiaK5, prius, grandeu
 
 struct ContentView: View {
     var body: some View {
-        List {
-            Section(header: Text("Electronic Car")) {
-                ForEach(cars.filter { $0 is ElectricCar}) { car in
-                    Text(car.modelName)
+        NavigationStack{
+            List {
+                Section(header: Text("Electronic Car")) {
+                    ForEach(cars.filter { $0 is ElectricCar}) { car in
+                        Text(car.modelName)
+                    }
+                }
+                Section(header: Text("Oil Car")) {
+                    ForEach(cars.filter { $0 is OilCar}) { car in
+                        Text(car.modelName)
+                    }
+                }
+                Section(header: Text("Hybrid Car")) {
+                    ForEach(cars.filter { $0 is HybridCar}) { car in
+                        Text(car.modelName)
+                    }
                 }
             }
-            Section(header: Text("Oil Car")) {
-                ForEach(cars.filter { $0 is OilCar}) { car in
-                    Text(car.modelName)
-                }
-            }
-            Section(header: Text("Hybrid Car")) {
-                ForEach(cars.filter { $0 is HybridCar}) { car in
-                    Text(car.modelName)
-                }
-            }
-            .padding()
+            .navigationTitle("Car List")
         }
+        
     }
 }
 
