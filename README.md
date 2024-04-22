@@ -2,4 +2,4 @@
 study for swiftui
 
 ## 1. CarList
-## 2. Calculator
+## 2. SwiftData
