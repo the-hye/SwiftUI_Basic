@@ -36,6 +36,13 @@ struct ContentView: View {
                             Image(systemName: "checkmark")
                         }
                     }
+                    .swipeActions(edge: .trailing) {
+                        Button(role: .destructive) {
+                            deleteTask(task)
+                        } label: {
+                            Label("Delete", systemImage: "trash")
+                        }
+                    }
                 }
             }
             .navigationTitle("Tasks")
@@ -53,6 +60,10 @@ struct ContentView: View {
         let newTask = Task(title: "Task #\(tasks.count + 1)")
         modelContext.insert(newTask)
         
+    }
+    
+    func deleteTask(_ task: Task) {
+        modelContext.delete(task)
     }
 }
 
