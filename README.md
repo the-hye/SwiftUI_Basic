@@ -36,3 +36,11 @@ study for swiftui
 
 	UIImage : UIKit에서 그리는 이미지  
 
+- Buttons : NavigationStack, Menu, List, PasteButton   
+	NavigationStack : 부모 view에서 자식 view를 제공   
+	NavigationLink : 자식 view로 이동  
+	Menu : menu 버튼 생성 
+	PasteButton : 붙여넣기 버튼 생성   
+	.toolbar { EditButton() } : Edit 버튼 생성  
+	.navigationTitle : view의 상단 제목  
+	.onDelete : Delete 버튼이 나오게 하는 액션  
