@@ -19,10 +19,17 @@ struct BackgroundStyle: ViewModifier {
     }
 }
 
+extension View {
+    func customBackgroundStyle(color: Color) -> some View {
+            modifier(BackgroundStyle(bgColor: color))
+        }
+}
+
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("Perfect").modifier(BackgroundStyle(bgColor: .yellow))
+            Text("Perfect")
+                .customBackgroundStyle(color: .green)
         }
         .padding()
     }
