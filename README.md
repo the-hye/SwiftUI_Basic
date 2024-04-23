@@ -54,3 +54,6 @@ study for swiftui
 
 - UsingModifier  
 	.modifier : 임의로 만든 ViewModifier 이용 가능   
+
+- ViewBuilder  
+	@ViewBuilder : view 템플릿의 역할의 함(미리 만들어 둔 후 활용 가능)  
