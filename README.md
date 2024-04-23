@@ -45,9 +45,12 @@ study for swiftui
 	.navigationTitle : view의 상단 제목  
 	.onDelete : Delete 버튼이 나오게 하는 액션 
 
-- ContentView : Form, Section, Picker, Toggle, Slider  
+- UsingContent : Form, Section, Picker, Toggle, Slider  
 	Form : 하나의 입력 형태를 나타냄  
 	Section : UI 내 공간 차지(?)  
 	Picker : 여러가지 선택지 출력  
 	Toggle : on/off 기능  
-	Slider : slider 모양 출력   
+	Slider : slider 모양 출력  
+
+- UsingModifier  
+	.modifier : 임의로 만든 ViewModifier 이용 가능   
