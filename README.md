@@ -57,3 +57,7 @@ study for swiftui
 
 - ViewBuilder  
 	@ViewBuilder : view 템플릿의 역할의 함(미리 만들어 둔 후 활용 가능)  
+
+- UsingSFSymbol  
+	symbolVariant : .default, .fill, .circle, .circle.fill  
+	symbolRenderingMode : symbol mode   
