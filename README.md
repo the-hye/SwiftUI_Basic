@@ -5,7 +5,7 @@ study for swiftui
 ## 2. SwiftData
 ## 3. SwiftUI-CookBook
 [24.04.23]
-- TheTasks : VStack, HStack, ZStack
+- TheTasks : VStack, HStack, ZStack  
   VStack : y축  
   HStack : x축  
   ZStack : z축  
@@ -60,4 +60,7 @@ study for swiftui
 
 - UsingSFSymbol  
 	symbolVariant : .default, .fill, .circle, .circle.fill  
-	symbolRenderingMode : symbol mode   
+	symbolRenderingMode : symbol mode  
+
+- UIKitToSwiftUI  
+	UIViewRepresentable : UIKit의 구성요소를 SwiftUI에서 사용하기 위한 기능   
