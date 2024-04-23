@@ -25,3 +25,14 @@ study for swiftui
   .strikethrough : 텍스트 중간 줄  
   .multilineTextAlignment : 텍스트 배치  
   .lineSpacing : 줄간 간격  
+
+- UsingImages
+	.resizable : 화면 크기에 맞게 이미지 사이즈 변경  
+	.aspectRatio : 이미지의 비울에 맞게 화면에 표시  
+	.frame : 이미지 크기 조절  
+	.clipShape : 이미지 모양 변경  
+	.overlay : 이미지 테두리  
+	.shadow : 그림자  
+
+	UIImage : UIKit에서 그리는 이미지  
+
