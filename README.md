@@ -39,8 +39,15 @@ study for swiftui
 - Buttons : NavigationStack, Menu, List, PasteButton   
 	NavigationStack : 부모 view에서 자식 view를 제공   
 	NavigationLink : 자식 view로 이동  
-	Menu : menu 버튼 생성 
-	PasteButton : 붙여넣기 버튼 생성   
+	Menu : menu 버튼 생성  
+	PasteButton : 붙여넣기 버튼 생성  
 	.toolbar { EditButton() } : Edit 버튼 생성  
 	.navigationTitle : view의 상단 제목  
-	.onDelete : Delete 버튼이 나오게 하는 액션  
+	.onDelete : Delete 버튼이 나오게 하는 액션 
+
+- ContentView : Form, Section, Picker, Toggle, Slider  
+	Form : 하나의 입력 형태를 나타냄  
+	Section : UI 내 공간 차지(?)  
+	Picker : 여러가지 선택지 출력  
+	Toggle : on/off 기능  
+	Slider : slider 모양 출력   
