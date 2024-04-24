@@ -68,3 +68,8 @@ study for swiftui
 [24.04.24]
 - SwiftUIToUIKit  
 	UIHostingController : SwiftUI의 기능을 UIKit Storyboard에서 사용 가능  	
+
+- WeScroll  
+	ScrollView : 스크롤 기능  
+	.scrollIndicatorsFlash : scrollbar가 보이게 함  
+	.scrollIndicators : scrollbar를 숨길지 보이게 할지 지정 가능  
