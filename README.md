@@ -88,3 +88,6 @@ study for swiftui
 	.searchable : 검색창 생성  
 	LabeledContent : 콘텐츠에 스타일이나 동작을 적용하는 라벨  
 	.searchScopes : 카테고리별 검색 기능  
+
+- LazyStack  
+	LazyHStack, LazyVStack : Stack 내부 데이터를 미리 로딩하는 것이 아닌, 화면에 필요할 때 로딩하는 기능  
