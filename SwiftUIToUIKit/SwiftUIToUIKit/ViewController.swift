@@ -21,6 +21,5 @@ class ViewController: UIViewController {
         
         return UIHostingController(coder: coder, rootView: rootView)
     }
-    
 }
 
