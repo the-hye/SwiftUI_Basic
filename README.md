@@ -82,3 +82,4 @@ study for swiftui
 	.onDelete : Delete 버튼이 나오게 하는 액션  
 	.onMove : 햄버거바로 목록 이동  
 
+- EditableList  
