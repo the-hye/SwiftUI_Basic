@@ -64,3 +64,7 @@ study for swiftui
 
 - UIKitToSwiftUI  
 	UIViewRepresentable : UIKit의 구성요소를 SwiftUI에서 사용하기 위한 기능   
+
+[24.04.24]
+- SwiftUIToUIKit  
+	UIHostingController : SwiftUI의 기능을 UIKit Storyboard에서 사용 가능  	
