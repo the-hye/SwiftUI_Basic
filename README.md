@@ -87,3 +87,4 @@ study for swiftui
 - SearchList  
 	.searchable : 검색창 생성  
 	LabeledContent : 콘텐츠에 스타일이나 동작을 적용하는 라벨  
+	.searchScopes : 카테고리별 검색 기능  
