@@ -83,3 +83,7 @@ study for swiftui
 	.onMove : 햄버거바로 목록 이동  
 
 - EditableList  
+
+- SearchList  
+	.searchable : 검색창 생성  
+	LabeledContent : 콘텐츠에 스타일이나 동작을 적용하는 라벨  
