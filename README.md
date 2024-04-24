@@ -75,3 +75,10 @@ study for swiftui
 	.scrollIndicators : scrollbar를 숨길지 보이게 할지 지정 가능  
 
 - StaticList : 고정된 자료를 ForEach로 나타내 줌  
+
+- ListActions  
+	.navigationBarTitleDisplayMode : navigation title 위치 지정 옵션  
+	ToolBarItem(placement:) : toolbar 내 요소 위치 변경  
+	.onDelete : Delete 버튼이 나오게 하는 액션  
+	.onMove : 햄버거바로 목록 이동  
+
