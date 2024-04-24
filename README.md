@@ -73,3 +73,5 @@ study for swiftui
 	ScrollView : 스크롤 기능  
 	.scrollIndicatorsFlash : scrollbar가 보이게 함  
 	.scrollIndicators : scrollbar를 숨길지 보이게 할지 지정 가능  
+
+- StaticList : 고정된 자료를 ForEach로 나타내 줌  
