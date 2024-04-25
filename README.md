@@ -92,7 +92,13 @@ study for swiftui
 - LazyStack  
 	LazyHStack, LazyVStack : Stack 내부 데이터를 미리 로딩하는 것이 아닌, 화면에 필요할 때 로딩하는 기능  
 
+[2024.04.25]  
 - LazyGrid  
 	GridItem : gird 형태로 배치(column, row)  
 	EdgeInsets : padding 크기를 상하좌우 자유롭게 지정 가능  
 
+- ScrollViewReaders  
+	.scrollPosition : 지정된 id를 기준으로 위치 이동 가능  
+	withAnimation : animation 삽입  
+	ScrollViewReader : scroll position에 대한 정보를 가지고 있음(ios 14+)  
+	.anchor : scroll 위치 이동 시 프로퍼티의 포지션 조절    
