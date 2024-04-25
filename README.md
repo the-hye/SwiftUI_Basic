@@ -91,3 +91,8 @@ study for swiftui
 
 - LazyStack  
 	LazyHStack, LazyVStack : Stack 내부 데이터를 미리 로딩하는 것이 아닌, 화면에 필요할 때 로딩하는 기능  
+
+- LazyGrid  
+	GridItem : gird 형태로 배치(column, row)  
+	EdgeInsets : padding 크기를 상하좌우 자유롭게 지정 가능  
+
