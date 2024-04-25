@@ -102,3 +102,6 @@ study for swiftui
 	withAnimation : animation 삽입  
 	ScrollViewReader : scroll position에 대한 정보를 가지고 있음(ios 14+)  
 	.anchor : scroll 위치 이동 시 프로퍼티의 포지션 조절    
+
+- ExpandingLists : 배열 속 배열 항목들을 출력  
+
