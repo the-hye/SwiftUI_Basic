@@ -107,3 +107,8 @@ study for swiftui
 
 - DisclosureGroups : 하위 항목을 숨김/보임 으로 나타낼 수 있는 기능  
 
+- CanvasPreview  
+	GeometryReader : 화면 전체 기준의 좌표  
+	.symbolRenderingMode : symbol 색상 모드 선택  
+	\.colorScheme : 다크모드, 라이트모드  
+	
