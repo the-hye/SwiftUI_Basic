@@ -121,3 +121,6 @@ study for swiftui
 - SignUp : 회원가입,로그인 form 작성 	
 	SecureField : 비밀번호 입력 시 사용  
 
+- FocusAndSubmit  
+	.submitLabel : 키보드 입력 후의 리턴 결과  
+	@FocusState : 키보드 입력 위치 focus   
