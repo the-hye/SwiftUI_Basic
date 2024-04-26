@@ -114,4 +114,6 @@ study for swiftui
 	\.colorScheme : 다크모드, 라이트모드  
 	
 - PreviewingNavigationStack : NavigationLink에서 Preview 보는 방법  
-	
+
+- PreviewWithTraits  
+	traits : 프리뷰 방향, 크기 조절 가능  	
