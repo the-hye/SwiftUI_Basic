@@ -116,4 +116,8 @@ study for swiftui
 - PreviewingNavigationStack : NavigationLink에서 Preview 보는 방법  
 
 - PreviewWithTraits  
-	traits : 프리뷰 방향, 크기 조절 가능  	
+	traits : 프리뷰 방향, 크기 조절 가능  
+
+- SignUp : 회원가입,로그인 form 작성 	
+	SecureField : 비밀번호 입력 시 사용  
+
