@@ -126,4 +126,5 @@ study for swiftui
 	@FocusState : 키보드 입력 위치 focus  
 
 - SignWithApple : apple 로그인 기능   
-	 
+	
+- RemoteConfig : firebase 연동   
