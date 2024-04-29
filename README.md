@@ -123,4 +123,7 @@ study for swiftui
 
 - FocusAndSubmit  
 	.submitLabel : 키보드 입력 후의 리턴 결과  
-	@FocusState : 키보드 입력 위치 focus   
+	@FocusState : 키보드 입력 위치 focus  
+
+- SignWithApple : apple 로그인 기능   
+	 
