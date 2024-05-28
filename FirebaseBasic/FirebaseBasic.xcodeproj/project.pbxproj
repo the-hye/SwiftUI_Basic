@@ -16,6 +16,14 @@
 		AFC74F182BDF5B5B007018C1 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AFC74F172BDF5B5B007018C1 /* GoogleSignInSwift */; };
 		AFE2C2C92BDF6B2E007AD4F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFE2C2C82BDF6B2E007AD4F8 /* GoogleService-Info.plist */; };
 		AFE2C2CB2BDF73E0007AD4F8 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2C2CA2BDF73E0007AD4F8 /* AuthenticationViewModel.swift */; };
+		AFE2C2CD2BE07137007AD4F8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2C2CC2BE07137007AD4F8 /* ProfileView.swift */; };
+		AFE2C2CF2BE07A06007AD4F8 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2C2CE2BE07A06007AD4F8 /* Note.swift */; };
+		AFE2C2D12BE07A2D007AD4F8 /* NoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2C2D02BE07A2D007AD4F8 /* NoteService.swift */; };
+		AFE2C2D32BE07AAD007AD4F8 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2C2D22BE07AAD007AD4F8 /* NoteDetailView.swift */; };
+		AFE2C2D52BE07AC6007AD4F8 /* NoteSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2C2D42BE07AC6007AD4F8 /* NoteSummaryView.swift */; };
+		AFE2C2D72BE07AD9007AD4F8 /* NotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2C2D62BE07AD9007AD4F8 /* NotesListView.swift */; };
+		AFE2C2DA2BE07B37007AD4F8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AFE2C2D92BE07B37007AD4F8 /* FirebaseFirestore */; };
+		AFE2C2DC2BE07D15007AD4F8 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2C2DB2BE07D15007AD4F8 /* AddNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +35,13 @@
 		AFE2C2C72BDF5E27007AD4F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AFE2C2C82BDF6B2E007AD4F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AFE2C2CA2BDF73E0007AD4F8 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		AFE2C2CC2BE07137007AD4F8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AFE2C2CE2BE07A06007AD4F8 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		AFE2C2D02BE07A2D007AD4F8 /* NoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteService.swift; sourceTree = "<group>"; };
+		AFE2C2D22BE07AAD007AD4F8 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		AFE2C2D42BE07AC6007AD4F8 /* NoteSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSummaryView.swift; sourceTree = "<group>"; };
+		AFE2C2D62BE07AD9007AD4F8 /* NotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListView.swift; sourceTree = "<group>"; };
+		AFE2C2DB2BE07D15007AD4F8 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFC74F182BDF5B5B007018C1 /* GoogleSignInSwift in Frameworks */,
+				AFE2C2DA2BE07B37007AD4F8 /* FirebaseFirestore in Frameworks */,
 				AFC74F132BDF5B0D007018C1 /* FirebaseAuth in Frameworks */,
 				AFC74F162BDF5B5B007018C1 /* GoogleSignIn in Frameworks */,
 			);
@@ -48,6 +64,7 @@
 			children = (
 				AFC74F022BDF5AA3007018C1 /* FirebaseBasic */,
 				AFC74F012BDF5AA3007018C1 /* Products */,
+				AFE2C2D82BE07B37007AD4F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,11 +81,18 @@
 			children = (
 				AFE2C2C72BDF5E27007AD4F8 /* Info.plist */,
 				AFC74F032BDF5AA3007018C1 /* FirebaseBasicApp.swift */,
+				AFE2C2D22BE07AAD007AD4F8 /* NoteDetailView.swift */,
+				AFE2C2D42BE07AC6007AD4F8 /* NoteSummaryView.swift */,
+				AFE2C2D62BE07AD9007AD4F8 /* NotesListView.swift */,
+				AFE2C2DB2BE07D15007AD4F8 /* AddNoteView.swift */,
 				AFC74F052BDF5AA3007018C1 /* ContentView.swift */,
+				AFE2C2CE2BE07A06007AD4F8 /* Note.swift */,
+				AFE2C2D02BE07A2D007AD4F8 /* NoteService.swift */,
 				AFE2C2CA2BDF73E0007AD4F8 /* AuthenticationViewModel.swift */,
 				AFE2C2C82BDF6B2E007AD4F8 /* GoogleService-Info.plist */,
 				AFC74F072BDF5AA9007018C1 /* Assets.xcassets */,
 				AFC74F092BDF5AA9007018C1 /* Preview Content */,
+				AFE2C2CC2BE07137007AD4F8 /* ProfileView.swift */,
 			);
 			path = FirebaseBasic;
 			sourceTree = "<group>";
@@ -79,6 +103,13 @@
 				AFC74F0A2BDF5AA9007018C1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFE2C2D82BE07B37007AD4F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +132,7 @@
 				AFC74F122BDF5B0D007018C1 /* FirebaseAuth */,
 				AFC74F152BDF5B5B007018C1 /* GoogleSignIn */,
 				AFC74F172BDF5B5B007018C1 /* GoogleSignInSwift */,
+				AFE2C2D92BE07B37007AD4F8 /* FirebaseFirestore */,
 			);
 			productName = FirebaseBasic;
 			productReference = AFC74F002BDF5AA3007018C1 /* FirebaseBasic.app */;
@@ -161,9 +193,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE2C2CF2BE07A06007AD4F8 /* Note.swift in Sources */,
+				AFE2C2CD2BE07137007AD4F8 /* ProfileView.swift in Sources */,
 				AFE2C2CB2BDF73E0007AD4F8 /* AuthenticationViewModel.swift in Sources */,
 				AFC74F062BDF5AA3007018C1 /* ContentView.swift in Sources */,
+				AFE2C2DC2BE07D15007AD4F8 /* AddNoteView.swift in Sources */,
 				AFC74F042BDF5AA3007018C1 /* FirebaseBasicApp.swift in Sources */,
+				AFE2C2D12BE07A2D007AD4F8 /* NoteService.swift in Sources */,
+				AFE2C2D32BE07AAD007AD4F8 /* NoteDetailView.swift in Sources */,
+				AFE2C2D72BE07AD9007AD4F8 /* NotesListView.swift in Sources */,
+				AFE2C2D52BE07AC6007AD4F8 /* NoteSummaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +261,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -279,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -305,6 +344,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,6 +374,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,6 +445,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AFC74F142BDF5B5B007018C1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		AFE2C2D92BE07B37007AD4F8 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFC74F112BDF5B0D007018C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

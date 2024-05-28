@@ -8,8 +8,36 @@
 import SwiftUI
 
 struct NotesListView: View {
+    @StateObject private var service: NotesService = NotesService()
+    @State private var isNewNotePresented = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List(service.notes) { note in
+                NavigationLink(value: note) {
+                    NoteSummaryView(note: note)
+                }
+            }
+            .navigationDestination(for: Note.self) { note in
+                NoteDetailView(note: note)
+            }
+            .navigationTitle("FireNotes")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                Button {
+                    isNewNotePresented.toggle()
+                } label: {
+                    Image(systemName: "plus")
+                        .font(.headline)
+                }
+            }
+            .sheet(isPresented: $isNewNotePresented) {
+                AddNoteView(service: service)
+            }
+            .task {
+                service.fetch()
+            }
+        }
     }
 }
 

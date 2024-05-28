@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct NoteSummaryView: View {
+    var note: Note
+    private let format: Date.FormatStyle = .dateTime.month(.wide).day().year()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Text(note.title)
+                .font(.headline)
+                .fontWeight(.bold)
+            Text("\(note.date, format: format)")
+                .font(.subheadline)
+        }
     }
 }
 
 #Preview {
-    NoteSummaryView()
+    List(0..<5) { _ in
+        NoteSummaryView(note: Note.sample)
+    }
 }

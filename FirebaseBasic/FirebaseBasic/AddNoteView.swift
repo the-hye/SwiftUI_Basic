@@ -8,11 +8,40 @@
 import SwiftUI
 
 struct AddNoteView: View {
+    @State private var title: String = ""
+    @State private var bodyText: String = ""
+    @Environment(\.dismiss) var dismiss
+    
+    var service: NotesService?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack(spacing: 12) {
+                TextField("Title", text: $title)
+                    .padding(4)
+                    .border(.gray)
+                TextEditor(text: $bodyText)
+                    .border(.gray)
+            }
+            .padding(32)
+            .navigationTitle("New Note")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        service?.addNote(title: title, date: Date(), body: bodyText)
+                        dismiss()
+                    } label: {
+                        Image(systemName: "checkmark")
+                            .font(.headline)
+                    }
+                    .disabled(title.isEmpty)
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    AddNoteView()
+    AddNoteView(service: nil)
 }

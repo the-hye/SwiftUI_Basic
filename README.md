@@ -125,6 +125,10 @@ study for swiftui
 	.submitLabel : 키보드 입력 후의 리턴 결과  
 	@FocusState : 키보드 입력 위치 focus  
 
+[24.04.29]  
 - SignWithApple : apple 로그인 기능   
 	
 - RemoteConfig : firebase 연동   
+
+[24.04.30]  
+- FirebaseBasic : google 로그인, firebase storage 사용  

@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct NoteDetailView: View {
+    var note: Note
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 12) {
+            Text(note.title)
+                .font(.headline)
+                .fontWeight(.bold)
+            TextEditor(text: .constant(note.body))
+                .border(.gray)
+        }
+        .padding(24)
     }
 }
 
 #Preview {
-    NoteDetailView()
+    NoteDetailView(note: Note.sampleWithLongBody)
 }

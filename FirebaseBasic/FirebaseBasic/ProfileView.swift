@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct ProfileView: View {
+    var authenticationViewModel: AuthenticationViewModel
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 10) {
+            AsyncImage(url: authenticationViewModel.photoURL) { image in
+                image
+                    .resizable()
+                    .clipShape(Circle())
+            } placeholder: {
+                ProgressView()
+            }
+            .frame(width: 100, height: 100)
+            Text("User: \(authenticationViewModel.username)")
+                .foregroundStyle(.black)
+            Text("Email: \(authenticationViewModel.email)")
+                .foregroundStyle(.black)
+            Button("Logout") {
+                authenticationViewModel.logout()
+            }
+            .buttonStyle(.borderedProminent)
+            .frame(width: 200, height: 30, alignment: .center)
+            .padding(.top, 10)
+        }
     }
 }
 
 #Preview {
-    ProfileView()
+    ProfileView(authenticationViewModel: AuthenticationViewModel())
 }
