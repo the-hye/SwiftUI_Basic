@@ -14,6 +14,7 @@
 		AFCC38142C05A53400E3F70A /* JournalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC38132C05A53400E3F70A /* JournalListView.swift */; };
 		AFCC38162C05A53D00E3F70A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC38152C05A53D00E3F70A /* MapView.swift */; };
 		AFCC38182C05A83100E3F70A /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC38172C05A83100E3F70A /* JournalEntry.swift */; };
+		AFCC381A2C05AFB500E3F70A /* AddJournalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC38192C05AFB500E3F70A /* AddJournalListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		AFCC38132C05A53400E3F70A /* JournalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListView.swift; sourceTree = "<group>"; };
 		AFCC38152C05A53D00E3F70A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		AFCC38172C05A83100E3F70A /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		AFCC38192C05AFB500E3F70A /* AddJournalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				AFCC38052C05A20E00E3F70A /* JRNL_SwiftUIApp.swift */,
 				AFCC38072C05A20E00E3F70A /* ContentView.swift */,
 				AFCC38132C05A53400E3F70A /* JournalListView.swift */,
+				AFCC38192C05AFB500E3F70A /* AddJournalListView.swift */,
 				AFCC38172C05A83100E3F70A /* JournalEntry.swift */,
 				AFCC38152C05A53D00E3F70A /* MapView.swift */,
 				AFCC38092C05A21300E3F70A /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 				AFCC38162C05A53D00E3F70A /* MapView.swift in Sources */,
 				AFCC38182C05A83100E3F70A /* JournalEntry.swift in Sources */,
 				AFCC38082C05A20E00E3F70A /* ContentView.swift in Sources */,
+				AFCC381A2C05AFB500E3F70A /* AddJournalListView.swift in Sources */,
 				AFCC38062C05A20E00E3F70A /* JRNL_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

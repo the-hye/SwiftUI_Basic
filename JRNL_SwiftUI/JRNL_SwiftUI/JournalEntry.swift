@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import UIKit
 
-class JournalEntry {
+class JournalEntry: Identifiable {
     let id = UUID()
     let date: Date
     let rating: Int
@@ -77,6 +77,6 @@ struct SampleJournalEntryData {
             fatalError("Unable to instantiate journalEntry3")
         }
         
-        journalEntries += [journalEntry1, journalEntry2, journalEntry3]
+        self.journalEntries += [journalEntry1, journalEntry2, journalEntry3]
     }
 }
